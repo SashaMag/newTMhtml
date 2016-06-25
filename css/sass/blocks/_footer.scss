@@ -1,0 +1,53 @@
+footer {
+	width: 100%;
+	background-color: $main-blue;
+	color: #fff;
+	@include box-sizing;
+	position: relative;
+	&>.container {
+		@include box-sizing;
+		padding: 15px 20px;
+	}
+}
+
+.footer__copyrights,
+.footer__address {
+	margin-bottom: 10px;
+}
+
+.footer__copyrights,
+.footer__address,
+.footer__phone-block {
+	font-size: 14px;
+	font-family: $font-light;
+}
+
+.footer__offer {
+	font-size: 12px;
+	font-family: $font-light;
+}
+
+.footer__phone-block,
+.footer__address {
+	display: none;
+}
+
+@media (min-width: $breakpoint-2) {
+
+.footer__phone-block,
+.footer__address {
+	display: block;
+}
+
+.footer__phone-block {
+	float: right;
+	text-align: right;
+	a {
+		color: #fff;
+		&.phone {
+			text-decoration: none;
+		}
+	}
+}
+
+}

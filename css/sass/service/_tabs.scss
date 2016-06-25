@@ -1,0 +1,167 @@
+/* Ion.Tabs
+// css version 1.0.0
+// by Denis Ineshin | ionden.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Ion.Tabs: Base */
+
+.ionTabs {
+  position: relative;
+}
+
+.ionTabs__head {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.ionTabs__head:before, .ionTabs__head:after {
+  content: "";
+  display: table;
+}
+
+.ionTabs__head:after {
+  clear: both;
+}
+
+.ionTabs__head {
+  zoom: 1;
+}
+
+.ionTabs__tab {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  color: #3a639a;
+}
+
+.ionTabs__tab.ionTabs__tab_state_active {
+  cursor: default;
+}
+
+.ionTabs__body {
+  position: relative;
+  z-index: 2;
+}
+
+.ionTabs__item {
+  position: relative;
+  display: none;
+}
+
+// img inside this block looks better
+.ionTabs__body img[style*="float: left"] {
+
+  margin: 5px 15px 15px 0;
+  border-radius: 5px;
+}
+
+.ionTabs__body img[style*="float: right"] {
+
+  margin: 5px 0 15px 15px;
+  border-radius: 5px;
+}
+
+.ionTabs__body img[align="left"] {
+
+  margin: 5px 15px 15px 0;
+  border-radius: 5px;
+}
+
+.ionTabs__body img[align="right"] {
+
+  margin: 5px 0 15px 15px;
+  border-radius: 5px;
+}
+
+// end img inside
+
+.ionTabs__item.ionTabs__item_state_active {
+  display: block;
+}
+
+.ionTabs__preloader {
+  position: relative;
+}
+
+/* Ion.Tabs: Flat Skin
+// css version 1.0.0
+// by Denis Ineshin | ionden.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Ion.Tabs: Skin details */
+
+.ionTabs {
+  margin: 0 0 30px;
+}
+
+.ionTabs__head {
+  display: table;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.ionTabs__tab {
+  @include box-sizing;
+  @include font($font-bold, 12px);
+  text-transform: uppercase;
+  display: table-cell;
+  background: #fff;
+  border: $grey-line;
+  border-right: none;
+  border-top: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:first-child {
+    border-left: none;
+  }
+}
+
+.ionTabs__head {
+  &.uaz {
+    .ionTabs__tab.ionTabs__tab_state_active {
+      border-top: 4px solid $uaz-color;
+      background-color: $uaz-color-light;
+      color: $uaz-color;
+    }
+  }
+  &.sy {
+    .ionTabs__tab.ionTabs__tab_state_active {
+      border-top: 4px solid $sy-color;
+      background-color: #fff;
+      color: $sy-color;
+    }
+  }
+}
+
+.ionTabs__body {
+}
+
+.ionTabs__item {
+}
+
+.ionTabs__preloader {
+}
+
+.ionTabs__body .video{
+  border: 1px solid; //
+  border-radius: 4px;
+  float: right;
+  color: #ffffff;
+  background-color: #527691;
+  padding: 5px;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,98 @@
+.no-width {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.special-offer-block {
+	.sale-block,
+	.service-block {
+		transition: opacity 0.5s ease-in-out;
+	}
+	.banner-block {
+		img {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.special-offer__select-type-block {
+	padding-left: 18px;
+	margin-bottom: 36px;
+}
+
+.special-offer__select-offer-type-button {
+	@include btn;
+	border: 3px solid $main-blue;
+	padding: 4px 28px;
+	background-color: #fff;
+	color: $main-blue;
+	margin-bottom: 6px;
+	margin-right: 18px;
+	font-size: 14px;
+	transition: all .2s ease-in-out;
+	&.active {
+		color: #fff;
+		background-color: $main-blue; 
+	}
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-1) {
+
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.special-offer-block {
+	.sale-block,
+	.service-block {
+		width: 49%;
+		display: inline-block;
+		&.full-width {
+			width: 100%;
+			float: none;
+			img {
+				width: 49%;
+				display: inline-block;
+				&:nth-child(2n) {
+					float: right;
+				}
+			}
+		}
+	}
+	.service-block {
+		float: right;
+	}
+}
+
+.special-offer__select-type-block {
+	padding-left: 0;
+}
+
+
+}

@@ -1,0 +1,428 @@
+.rubric-button-block {
+	width: 100%;
+	@include box-sizing;
+	.rubric-button {
+		@include box-sizing;
+		@include font($font-bold, 12px);
+		color: $main-blue;
+		vertical-align: top;
+		display: inline-block;
+		width: 48.5%;
+		height: 100px;
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0;
+		padding-top: 65px;
+		background-color: #efefef;
+		text-decoration: none;		
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		cursor: pointer;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+		&__service-page--1:after,
+		&__service-page--2:after,
+		&__service-page--3:after,
+		&__service-page--4:after,
+		&__service-page--5:after,
+		&__service-page--6:after,
+		&__service-page--7:after,
+		&__service-page--8:after,
+		&__used-cars--1:after,
+		&__used-cars--2:after,
+		&__used-cars--3:after,
+		&__used-cars--4:after,
+		&__contacts--1:after,
+		&__contacts--2:after,
+		&__contacts--3:after,
+		&__contacts--4:after,
+		&__parts--1:after,
+		&__parts--2:after,
+		&__parts--3:after,
+		&__parts--4:after,
+		&__tuning-page--1:after,
+		&__tuning-page--2:after,
+		&__tuning-page--3:after,
+		&__tuning-page--4:after, {
+			background-repeat: no-repeat;		
+			background-size: contain;	
+		}
+		&__service-page--1:after {
+			top: 14px;
+			background-image: url(/img/icon/service.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__service-page--2:after {
+			top: 14px;
+			background-image: url(/img/icon/price.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 50px;
+		}
+		&__service-page--3:after {
+			top: 14px;
+			background-image: url(/img/icon/repair.png);
+			background-position: 0 0;
+			height: 45px;
+			width: 45px;
+		}
+		&__service-page--4:after {
+			top: 14px;
+			background-image: url(/img/icon/body-repair.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 80px;
+		}
+		&__service-page--5:after {
+			top: 12px;
+			background-image: url(/img/icon/warranty.png);
+			background-position: 0 0;
+			height: 44px;
+			width: 70px;			
+		}
+		&__service-page--6:after {
+			top: 14px;
+			background-image: url(/img/icon/special-offer.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 40px;
+		}
+		&__service-page--7:after {
+			top: 14px;
+			background-image: url(/img/icon/bodyguard.png);
+			background-position: 0 0;
+			height: 45px;
+			width: 30px;
+		}
+		&__service-page--8:after {
+			top: 14px;
+			background-image: url(/img/icon/additional.png);
+			background-position: 0 0;
+			height: 55px;
+			width: 55px;
+		}
+		&__used-cars--1:after {
+			top: 19px;
+			background-image: url(/img/icon/in-stock.png);
+			background-position: 0 0;
+			height: 50px;
+			width: 50px;
+		}		
+		&__used-cars--2:after {
+			top: 22px;
+			background-image: url(/img/icon/trade-in.png);
+			background-position: 0 0;
+			height: 30px;
+			width: 59px;
+		}		
+		&__used-cars--3:after {
+			top: 5px;
+			background-image: url(/img/icon/utilization.png);
+			background-position: 12px 0;
+			height: 55px;
+			width: 55px;
+		}		
+		&__used-cars--4:after {
+			top: 14px;
+			background-image: url(/img/icon/comission.png);
+			background-position: 0 0;
+			height: 55px;
+			width: 55px;
+		}		
+		&__contacts--1:after {
+			top: 17px;
+			background-image: url(/img/icon/contacts-first.png);
+			background-position: 0 0;
+			height: 35px;
+			width: 18px;
+		}
+		&__contacts--2:after {
+			top: 17px;
+			background-image: url(/img/icon/contacts-second.png);
+			background-position: 5px 0;
+			height: 35px;
+			width: 30px;
+		}
+		&__contacts--3:after {
+			top: 14px;
+			background-image: url(/img/icon/contacts-tm.png);
+			background-position: 15px 0;
+			height: 35px;
+			width: 103px;
+		}
+		&__contacts--4:after {
+			top: 14px;
+			background-image: url(/img/icon/contacts-news.png);
+			background-position: 10px 0;
+			height: 35px;
+			width: 52px;
+		}
+		&__parts--1:after {
+			top: 14px;
+			background-image: url(/img/icon/cogwheel.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__parts--2:after {
+			top: 14px;
+			background-image: url(/img/icon/service.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__parts--3:after {
+			top: 14px;
+			background-image: url(/img/icon/wheels.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__parts--4:after {
+			top: 14px;
+			background-image: url(/img/icon/special-offer-1.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__tuning-page--1:after {
+			top: 14px;
+			background-image: url(/img/icon/cogwheel.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__tuning-page--4:after {
+			top: 14px;
+			background-image: url(/img/icon/wheels.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&:nth-child(2n) {
+			float: right;
+		}
+		&:nth-child(2n-1) {
+			float: left;
+		}
+	}
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-1) {
+
+.rubric-button-block {
+	.rubric-button {
+		width: 49%;
+		height: 186px;
+		margin-bottom: 17px;
+		padding-top: 125px;
+		&__service-page--1:after,
+		&__service-page--2:after,
+		&__service-page--3:after,
+		&__service-page--4:after,
+		&__service-page--5:after,
+		&__service-page--6:after,
+		&__service-page--7:after,
+		&__service-page--8:after,
+		&__used-cars--1:after,
+		&__used-cars--2:after,
+		&__used-cars--3:after,
+		&__used-cars--4:after,
+		&__contacts--1:after,
+		&__contacts--2:after,
+		&__contacts--3:after,
+		&__contacts--4:after,
+		&__parts--1:after,
+		&__parts--2:after,
+		&__parts--3:after,
+		&__parts--4:after,
+		&__tuning-page--1:after,
+		&__tuning-page--2:after,
+		&__tuning-page--3:after,
+		&__tuning-page--4:after, {
+			top: 45px;			
+			background-position: 0 0;
+		}
+		&__service-page--1:after {
+			height: 58px;
+			width: 79px;
+			background-position: 20px 0;
+		}
+		&__service-page--2:after {
+			height: 61px;
+			width: 70px;
+		}
+		&__service-page--3:after {
+			height: 59px;
+			width: 59px;
+		}
+		&__service-page--4:after {
+			height: 47px;
+			width: 106px;
+		}
+		&__service-page--5:after {
+			height: 61px;
+			width: 100px;		
+			background-position: 5px 0;	
+		}
+		&__service-page--6:after {
+			height: 62px;
+			width: 52px;
+		}
+		&__service-page--7:after {
+			height: 62px;
+			width: 43px;
+		}
+		&__service-page--8:after {
+			height: 59px;
+			width: 86px;
+		}		
+		&__used-cars--1:after {
+			height: 51px;
+			width: 67px;
+		}		
+		&__used-cars--2:after {
+			height: 50px;
+			width: 100px;
+		}		
+		&__used-cars--3:after {
+			background-position: 12px 0;
+			height: 67px;
+			width: 67px;
+		}		
+		&__used-cars--4:after {
+			height: 50px;
+			width: 68px;
+		}		
+		&__contacts--1:after {
+			height: 43px;
+			width: 18px;
+		}
+		&__contacts--2:after {
+			background-position: 0 0;
+			height: 44px;
+			width: 30px;
+		}
+		&__contacts--3:after {
+			background-position: 0 0;
+			height: 43px;
+			width: 103px;
+		}
+		&__contacts--4:after {
+			background-position: 0 0;
+			height: 46px;
+			width: 52px;
+		}
+		&__parts--1:after {
+			height: 61px;
+			width: 61px;
+		}
+		&__parts--2:after {
+			background-position: 20px 0;
+			height: 58px;
+			width: 79px;
+		}
+		&__parts--3:after {
+			height: 61px;
+			width: 57px;
+		}
+		&__parts--4:after {
+			height: 62px;
+			width: 52px;
+		}
+		&__tuning-page--1:after {
+			height: 61px;
+			width: 61px;
+		}
+		&__tuning-page--4:after {
+			height: 61px;
+			width: 57px;
+		}
+	}
+}
+
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.rubric-button-block {
+	.rubric-button {
+		width: 23.8%;
+		height: 140px;
+		margin-right: 1.25%;
+		margin-bottom: 20px;
+		padding-top: 100px;
+		&__service-page--1:after,
+		&__service-page--2:after,
+		&__service-page--3:after,
+		&__service-page--5:after,
+		&__service-page--6:after,
+		&__service-page--7:after,
+		&__service-page--8:after,
+		&__used-cars--1:after,
+		&__used-cars--2:after,
+		&__used-cars--4:after,
+		&__contacts--1:after,
+		&__contacts--2:after,
+		&__contacts--3:after,
+		&__contacts--4:after,
+		&__parts--1:after,
+		&__parts--2:after,
+		&__parts--3:after,
+		&__parts--4:after,
+		&__tuning-page--1:after,
+		&__tuning-page--2:after,
+		&__tuning-page--3:after,
+		&__tuning-page--4:after {
+			top: 28px;			
+		}
+		&__service-page--4:after {
+			top: 40px;
+		}		
+		&__used-cars--3:after {
+			top: 20px;
+		}
+		&:nth-child(2n) {
+			float: none;
+			margin-right: 1.25%;
+		}
+		&:nth-child(2n-1) {
+			float: none;
+			margin-right: 1.25%;
+		}
+		&:last-child,
+		&:nth-child(4n) {
+			margin-right: -4px;
+		}
+	}
+}
+
+}

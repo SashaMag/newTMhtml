@@ -1,0 +1,394 @@
+header>div {
+	position: relative;
+	z-index: 100;
+}
+
+.hamburger__btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 64px;
+	height: 50px;
+	background-color: $main-blue;
+	position: relative;
+	&.active {
+		background-color: $main-red;
+	}
+	.hamburger__stripe {
+		position: absolute;
+		width: 27px;
+		height: 4px;
+		left: 18px;
+		background-color: #fff;
+	}
+	.hamburger__stripe-1 {
+		top: 16px;
+	}
+	.hamburger__stripe-2 {
+		top: 24px;
+	}
+	.hamburger__stripe-3 {
+		top: 32px;
+	}
+}
+
+.hamburger__btn-tablet {
+	display: none;
+}
+
+.header__logo-block {
+	display: inline-block;
+	margin-bottom: 12px;
+	margin-left: 10px;
+	img {
+		height: 45px;
+		vertical-align: bottom;
+		margin-top: 5px;
+	}
+}
+
+.header__phones-block {
+	margin-bottom: 20px;
+	.phone {
+		font-family: $font-bold;
+		vertical-align: top;
+		text-transform: uppercase;
+		a {
+			text-decoration: none;
+			display: block;
+			font-size: 18px;
+		}
+		span {
+			display: block;
+			font-size: 12px;
+		}
+	}
+	.phone-3,
+	.phone-4 {
+		display: none;
+	}
+	.phone-1,
+	.phone-3 {
+		float: left;
+		margin-left: 10px;
+		border-bottom: 1px solid $main-blue;
+	}
+	.phone-2,
+	.phone-4 {
+		float: right;
+		margin-right: 10px;
+		color: $main-red;
+	}
+
+	.phone-1 a,
+	.phone-3 a {
+		color: $main-blue;
+	}
+	.phone-2 a,
+	.phone-4 a {
+		color: $main-red;
+		border-bottom: 1px solid $main-red;
+	}
+}
+
+.header__brand-logos-block {
+	margin-bottom: 20px;
+	display: table;
+	width: 100%;
+	text-align: center;
+	.logo {
+		display: table-cell;
+		width: 24.5%;
+	}
+	.logo-5,
+	.logo-6,
+	.logo-7,
+	.logo-8 {
+		display: none;
+	}
+}
+
+.header__nav {
+	ul {
+		list-style: none;
+	}
+}
+
+.header__nav-item {
+	display: inline-block;
+	width: 50%;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	margin-right: -4px;
+	box-sizing: border-box;
+	border-top: $grey-line;
+	vertical-align: top;
+	font-size: 12px;
+	font-family: $font-medium;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		text-decoration: none;
+		display: table;
+		height: 50px;
+		box-sizing: border-box;
+		color: $main-blue;
+		width: 100%;
+		span {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0;
+			margin: 0 auto;
+		}
+	}	
+
+	&:nth-child(2n-1) {
+		border-right: $grey-line;
+	}
+
+	&.header__nav-item-11 {
+		width: 100%;
+		border-right: none;
+		border-bottom: $grey-line;
+		text-align: center;
+	}
+
+	&.header__nav-item-01,
+	&.header__nav-item-04,
+	&.header__nav-item-05,
+	&.header__nav-item-08,
+	&.header__nav-item-09,
+	&.header__nav-item-11 {
+		background-color: #efefef;
+	}
+
+	&.header__nav-item-02,
+	&.header__nav-item-03,
+	&.header__nav-item-06,
+	&.header__nav-item-07,
+	&.header__nav-item-10 {
+		background-color: #e2e2e2;
+	}
+}
+
+#popup-hamburger-mobile ul,
+#popup-hamburger-tablet ul {
+	margin-top: 50px;
+}
+
+.header__nav--collapsing {
+	max-width: $breakpoint-1;
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+	&.active {
+		height: 500px;
+	}
+	.tablet,
+	.desktop {
+		display: none;
+	}
+}
+
+// tablet
+
+@media (min-width: $breakpoint-1) {
+
+.hamburger__btn-mobile {
+	display: none;
+}
+
+.hamburger__btn-tablet {
+	display: inline-block;
+}
+	
+.header__logo-block {
+	margin-bottom: 22px;
+}
+
+.header__phones-block {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	.phone-1 {
+		margin-right: 15px;
+	}
+}
+
+.header__brand-logos-block {
+	margin-bottom: 22px;
+}
+
+.header__nav {
+	width: 100%;
+	max-width: $breakpoint-2;
+	.desktop,
+	.mobile {
+		display: none;
+
+	}
+	.tablet {
+		display: block;
+		height: 0;
+	}
+	.header__nav-item {
+		width: 25%;
+		border-top: none;
+		border-bottom: $grey-line;
+		background-color: #efefef;
+		text-align: center;
+		padding-left: 0;
+		&-02,
+		&-04,
+		&-05,
+		&-07,
+		&-010 {
+			background-color: #efefef;
+		}
+		&-01,
+		&-03,
+		&-06,
+		&-08,
+		&-09,
+		&-11 {
+			background-color: #e2e2e2;
+		}
+
+		&-01,
+		&-02,
+		&-03,
+		&-04, {
+			border-top: $grey-line;
+		}
+
+		&-02,
+		&-06,
+		&-10 {
+			border-right: $grey-line;
+		}
+	}
+	.header__nav-item-11 {
+		width: 50%;
+	}
+}
+
+}
+
+@media (min-width: $breakpoint-2) {
+
+header {
+	width: $desktop-width;
+}
+
+.header__logo-block,
+.header__brand-logos-block,
+.header__nav
+ {
+	margin-bottom: 16px;
+	.logo-5,
+	.logo-6,
+	.logo-7,
+	.logo-8 {
+		display: inline-block;
+	}
+	.logo-1,
+	.logo-2,
+	.logo-3,
+	.logo-4 {
+		display: none;
+	}
+}
+
+.header__logo-block {
+	margin-left: 0;
+	img {
+		height: 50px;
+		margin-top: 0;
+	}
+}
+
+.hamburger__btn {
+	display: none;
+}
+
+.header__nav--collapsing {
+	max-width: $desktop-width;
+	width: $desktop-width;
+	position: static;
+	height: 75px;
+	&.active {
+		height: 75px;
+	}
+	.mobile,
+	.tablet {
+		display: none;
+	}
+	.desktop {
+		display: block;
+		.header__nav-item {
+			@include font($font-bold, 14px);
+		}
+	}
+	.header__nav-item {
+		width: 16.6%;
+		height: 37px;
+		border: none;
+		background-color: #fff;
+		border-right: 1px solid $main-blue;
+		text-align: center;
+		a {
+			padding-top: 11px;
+		}
+		&:hover {
+			background-color: #adadad;
+			a {
+				color: #fff;
+			}
+		}
+		&-01,
+		&-02,
+		&-03,
+		&-04,
+		&-05 {
+			border-bottom: 1px solid $main-blue;
+		}
+		&-06 {
+			border-right: none;
+			border-bottom: 1px solid $main-blue;
+		}
+		&-11 {
+			width: 33.2%;
+			border-right: none;
+		}
+	}
+}
+
+.header__phones-block {
+	.phone-3,
+	.phone-4 {
+		display: block;
+		border-bottom: none;
+		a {
+			@include font($font-bold, 24px);
+			border-bottom: none;
+		}
+	}
+	.phone-3 {
+		margin-right: 22px;
+	}
+	.phone-4 {
+		a {
+			margin-bottom: 5px;
+		}
+		span {
+			@include font($font-bold, 16px);
+		}
+	}
+	.phone-1,
+	.phone-2 {
+		display: none;
+	}	
+}
+
+
+}

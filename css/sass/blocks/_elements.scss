@@ -1,0 +1,38 @@
+hr.headline {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 12px;
+	border-bottom: $grey-line;
+}
+
+.link-view-all {
+	@include font($font-bold, 14px);
+	display: block;
+	margin-bottom: 20px;
+	color: #2a2f95;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: $breakpoint-1) {
+
+.link-view-all {
+	float: right;
+	margin-bottom: 0;
+	margin-right: 30px;
+}
+
+}
+
+@media (min-width: $breakpoint-2) {
+
+.link-view-all {
+	margin-right: 0;
+}
+
+}

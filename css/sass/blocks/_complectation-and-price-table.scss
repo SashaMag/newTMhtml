@@ -1,0 +1,212 @@
+.listing-button-block {
+	background-color: #efefef;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+.complectation-table__previous-column {
+	text-align: right;
+	float: left;
+	color: #979797;
+}
+
+.complectation-table__next-column {
+	text-align: left;
+	float: right;
+	color: #333;
+}
+
+.complectation-table__previous-column,
+.complectation-table__next-column {
+	text-decoration: none;
+	@include font($font-bold, 14px, 18px);
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.complectation-table-scrolling {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+	td {
+		height: 42px;
+		border: $grey-line;
+	}
+	.paragraph {
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: -5px;
+		table {
+			width: 100%;
+			td {
+				@include font($font-bold, 12px, 14px);
+				text-transform: uppercase;
+				padding-left: 8px;
+			}
+		}
+	}
+	.listing-content {
+		width: 60%;
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		.listing {
+			position: relative;
+			height: 220px;					
+			table {
+				width: 100%;
+				position: absolute;
+				left: 0;
+				transition: all 0.5s ease-in-out;
+			}
+			tr {
+				&:nth-child(3),
+				&:nth-child(4) {
+					background-color: $uaz-color-light;
+				}
+			}
+			td {
+				@include font($font-medium, 14px);
+				overflow: hidden;
+				padding-left: 10px;				
+			}
+		}
+	}
+}
+
+.complectation-table-desktop {
+	display: none;
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {
+
+.complectation-table-scrolling {
+	.paragraph {
+		width: 20%;
+	}
+	.listing-content {
+		width: 80%;
+	}
+}
+
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-2) {
+
+.complectation-table__previous-column,
+.complectation-table__next-column,
+.listing-button-block,
+.complectation-table-scrolling {
+	display: none;
+}
+
+.complectation-table-desktop {
+	display: table;
+	margin-bottom: 12px;
+	width: 100%;
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		width: 11.11%;
+	}
+	thead {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				padding-left: 5px;
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+		}
+	}
+	tbody {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+		}
+	}
+	&--uaz {
+		thead {
+			tr {
+				&:first-child {
+					color: $uaz-color;
+					background-color: $uaz-color-light;
+					border-top: 3px solid $uaz-color;		
+				}
+			}
+		}
+		tbody {
+			// шапка аккордеона
+			&.header {
+				color: $uaz-color;
+				background-color: $uaz-color-light;
+				.expand {
+					text-decoration: underline;
+				}
+			}			
+			tr {
+				&:hover {
+					color: $uaz-color-light-text-hover; //$uaz-color;
+					background-color: $uaz-color-light-hover-bg;
+				}
+			}
+		}
+	}
+	.sy-head {
+		background-color: #efefef;
+		height: 70px;
+		border: none;
+		td {
+			text-transform: uppercase;
+			text-align: center;
+			border: none;
+			&:hover {
+				background-color: $sy-color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+// .complectation-table-scrolling {
+// 	.paragraph {
+// 		width: 20%;
+// 	}
+// 	.listing-content {
+// 		width: 80%;
+// 		.listing {
+// 			table {
+// 				position: static;
+// 				left: 0;
+// 			}
+// 		}
+// 	}
+// }
+
+}

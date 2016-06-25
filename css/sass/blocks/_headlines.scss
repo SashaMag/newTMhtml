@@ -1,0 +1,29 @@
+h1,
+h2 {
+	@include headline($main-blue);	
+	margin-left: 18px;
+}
+
+h1 {
+	@include font($font-bold, 24px);
+}
+
+h2 {
+	@include font($font-bold, 20px);
+}
+
+.index__content-block {
+	h3 {
+		@include headline(#333);
+		@include font($font-bold, 16px);
+	}
+}
+
+@media (min-width: $breakpoint-2) {
+
+h1,
+h2 {
+	margin-left: 0;
+}
+
+}

@@ -1,0 +1,18 @@
+.breadcrumbs {
+	margin-bottom: 10px;
+	margin-left: 18px;
+	a, 
+	span {
+		color: #333;
+		@include font($font-bold, 14px);
+		text-decoration: none;
+	}
+}
+
+@media (min-width: $breakpoint-2) {
+
+.breadcrumbs {
+	margin-left: 0;
+}
+
+}

@@ -1,0 +1,43 @@
+.contacts-input-radio {
+	display: none;
+}
+
+.contacts-label-for-radio {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+	color: #135d2f;
+	border-bottom: 1px dashed #135d2f;
+	vertical-align: bottom;
+}
+
+.contacts-content-blocks-block .contacts-content-block {
+	display: none;
+}
+
+#contacts-input-radio--1:checked ~ .contacts-content-blocks-block > .contacts-content-block--1,
+#contacts-input-radio--2:checked ~ .contacts-content-blocks-block > .contacts-content-block--2,
+#contacts-input-radio--3:checked ~ .contacts-content-blocks-block > .contacts-content-block--3,
+#contacts-input-radio--4:checked ~ .contacts-content-blocks-block > .contacts-content-block--4,
+#contacts-input-radio--5:checked ~ .contacts-content-blocks-block > .contacts-content-block--5 {
+	display: block;
+}
+
+#contacts-input-radio--1:checked ~ .contacts-label-for-radio-block >  .contacts-label-for-radio--1,
+#contacts-input-radio--2:checked ~ .contacts-label-for-radio-block >  .contacts-label-for-radio--2,
+#contacts-input-radio--3:checked ~ .contacts-label-for-radio-block >  .contacts-label-for-radio--3,
+#contacts-input-radio--4:checked ~ .contacts-label-for-radio-block >  .contacts-label-for-radio--4,
+#contacts-input-radio--5:checked ~ .contacts-label-for-radio-block >  .contacts-label-for-radio--5 {
+	color: #222;
+	border-bottom: none;
+}
+
+
+
+
+
+.example-banner {
+	width: 100%;
+	height: 250px;
+	background-color: #ccc;
+}

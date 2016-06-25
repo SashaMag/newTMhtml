@@ -1,0 +1,87 @@
+body {
+	background-color: $main-bg;
+	font-family: "RobotoRegular";
+}
+
+.container {
+	width: 100%;
+	min-width: $breakpoint-0;
+	max-width: $breakpoint-1;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+ 
+.clearfix:after {
+clear: both;
+}
+
+.desktop {
+	display: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.invisible {
+	display: none;
+}
+
+
+
+
+
+@media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
+	
+
+	.container {
+		width: 100%;
+		min-width: 600px;
+		max-width: $breakpoint-2;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+
+@media (min-width: $breakpoint-2) {
+
+	body {
+		padding-top: 12px;
+	}
+
+	.container {
+		width: $desktop-width;
+		max-width: $desktop-width;
+		margin: 0 auto;
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}

@@ -1,0 +1,170 @@
+.calc-body__nav-column {
+	padding-left: 18px;
+	padding-right: 18px;	
+}
+
+.calc-body__select-car-block {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.calc-body__select-car {
+	@include box-sizing;	
+	margin-bottom: 0;
+}
+
+.calc-body__table-block {
+	margin-top: -20px;
+}
+
+.calc-body-table {
+	width: 100%;
+	thead {
+		background-color: $main-blue;
+
+		@include font($font-bold, 12px);
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		td {
+			height: 40px;
+			vertical-align: middle;
+			&:first-child {
+				width: 45%;
+				border-left: 1px solid $main-blue;
+			}
+			&:last-child {
+				padding-right: 10px;
+				border-right: 1px solid $main-blue;
+			}
+		}
+	}
+
+	tbody {
+		td {
+			border-bottom: $grey-line;
+			border-right: $grey-line;
+			height: 40px;
+			vertical-align: middle;
+			&:first-child {
+				font-size: 12px;
+				padding-left: 10px;
+				border-left: $grey-line;
+			}
+			&:nth-child(2){
+				border-right: none;
+			}
+			&:nth-child(3){
+				border: none;
+			}
+			select {
+				@include box-sizing;
+				height: 42px;
+				width: 100%;
+				margin-bottom: -1px;
+				border-bottom: none;
+			}
+		}
+		tr {
+			&:last-child {
+				select {
+					border-bottom: $grey-line;
+				}
+			}
+		}
+	}
+	tfoot {
+		width: 100%;
+		border: $grey-line;
+		td {
+		&:first-child {
+			@include font($font-bold, 14px);
+			text-transform: uppercase;
+			padding-left: 10px;
+		}			
+			height: 40px;
+		}
+	}
+
+	label {
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color: #efefef;
+		border: $grey-line;
+		margin: 0 auto;
+	}
+
+	.calc-table-radio {
+		display: none;
+	}
+
+	.calc-table-radio:checked ~ label {
+		background-image: url(/img/icon/table-radio.png);
+	}
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-1) {
+
+.calc-body__table-block {
+	margin-top: -60px;
+}
+
+
+.calc-body-table {
+	thead {		
+		td {			
+			&:first-child {
+				width: 50%;				
+			}
+		}
+	}
+}
+
+
+
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.calc-body__select-car-block {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.calc-body__table-block {
+	margin-top: -45px;
+}
+
+.calc-body-table {
+	thead {		
+		td {			
+			&:first-child {
+				width: 55%;				
+			}
+		}
+	}
+}
+
+
+
+}

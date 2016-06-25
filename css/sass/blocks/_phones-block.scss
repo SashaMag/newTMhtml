@@ -1,0 +1,74 @@
+.including-phones-blocks {
+	padding-left: 18px;
+	padding-right: 18px;
+	margin-bottom: 25px;
+}
+
+.including-phones-block {
+	h3 {
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.phone,
+	.mobile,
+	.mail {
+		display: block;
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+	}
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {
+
+.including-phones-block {
+	display: inline-block;
+	vertical-align: top;
+	&:first-child {
+		margin-right: 40px;
+	}
+	&:last-child {
+		display: block;
+	}
+}
+
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.including-phones-blocks {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.including-phones-block {
+	margin-bottom: 28px;
+	&:nth-child(2),
+	&:first-child {
+		margin-right: 40px;
+	}
+	&:last-child {
+		display: inline-block;
+	}
+}
+
+}

@@ -1,0 +1,108 @@
+@import "general/_variables";
+@import "general/_mixins";
+@import "general/_style";
+
+@import "service/_normalize";
+@import "service/_slider";
+@import "service/_slider-2";
+@import "service/_modal";
+@import "service/_tabs";
+@import "service/_accordion";
+
+@import "blocks/_elements";
+@import "blocks/_headlines";
+@import "blocks/_header";
+@import "blocks/_footer";
+@import "blocks/_two-column";
+@import "blocks/_forms";
+@import "blocks/_breadcrumbs";
+@import "blocks/_goods-block";
+@import "blocks/_text-decoration";
+@import "blocks/_rubric-buttons";
+@import "blocks/_collapsing-content";
+@import "blocks/_banner";
+@import "blocks/_address-block";
+@import "blocks/_phones-block";
+@import "blocks/_scroll-box";
+@import "blocks/_maintenance-table";
+@import "blocks/_complectation-and-price-table";
+@import "blocks/_tech-spec-table";
+@import "blocks/_in-stock-table";
+@import "blocks/_news";
+@import "blocks/_tuning-table";
+@import "blocks/_aside-with-collage";
+@import "blocks/_cart-table";
+
+@import "pages/_index";
+@import "pages/_model-page";
+@import "pages/_new-cars";
+@import "pages/_service";
+@import "pages/_service-price";
+@import "pages/_used-cars";
+@import "pages/_calc-body";
+@import "pages/_calc-locksmith";
+@import "pages/_contacts";
+@import "pages/_special-offers";
+@import "pages/_autocredit";
+@import "pages/_parts";
+@import "pages/_news";
+@import "pages/_leasing";
+@import "pages/_tire";
+@import "pages/_tuning";
+
+@import "_secondary";
+
+
+
+// уточнить
+
+// цвет гамбургера при нажатии
+// цвет ссылок навигации при нажатии
+
+// todo
+
+// header: пикчи сделать спрайтами, не отдельными картинками
+// кнопка онлайн консультанта
+// модел пейдж -- ховер
+// модел пейдж -- таблетный вид, выровнять форму
+// модел пейдж -- кнопки принта, еще чего-то
+// формы -- все value/название/имена
+// формы -- цвет кнопки для автокредита
+// формы обратная связь телефон
+// формы -- избавиться от лишнего
+// ховеры везде
+// сервис пейдж фотки и все остальное
+// сервис-прайс
+// calc body -- список работ, разобраться с отправкой формы, внешний вид лейбла
+// calc body -- ширина селекта
+// заголовки везде -- h1 должно быть одно
+// страница запчастей -- количество марок, нужен ли хёндай?
+// таблица в блоке запчастей -- продумать, решить
+// функционал таблицы
+// new cars -- цвет логотипов
+// цены на ТО
+// о компании -- кнопка с вакансиями
+// услуги -- иконки
+// ++++ trade-in, утилизация, тест-драйв -- форма, размер формы, использовать ли всплывашку или заюзать новую? сделать встраивание, чтобы крестик было не видно 
+// комиссия -- форма заюзана на утилизацию, сменить название и прочее
+// комиссия -- текст, форматирование текста
+// заголовок -- над или слева от кнопок?
+// эвакутор и автовоз -- форму
+// new cars заголовки h1
+// title всех страниц
+// новости -- размер изображение, оно растягивается
+// новость -- формат, две или одна колонка? боковые кнопки?
+// сделать кнопки встраивамыми пхпой
+// мыло в корпоративных клиентах
+// ++++ лизинг форма
+// лизинг пикча
+// all -- форматирование текста
+// спецпредложения -- абсолютно однотипные, наполнение под вопросом
+// тюнинг -- ссылки на страницы
+// тюнинг пикчи
+// ++тюнинг форма
+// Корзина -- не сделана мобильная
+// страница с запчастями модели -- линки.
+// формы -- паттер емайл и телефон
+// запчасти -- доверенность на представителя
+// модел пейдж -- кнопки флоат лефт-райт

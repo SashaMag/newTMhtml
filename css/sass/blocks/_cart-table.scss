@@ -1,0 +1,179 @@
+.parts-table {
+	display: table;
+	margin-bottom: 36px;
+	width: 100%;
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		&:nth-child(1) {
+			width: 7%;
+		}
+		&:nth-child(2) {
+			width: 20%;
+		}
+		&:nth-child(3) {
+			width: 60%;
+		}
+		&:nth-child(4) {
+			padding-left: 0;
+			text-align: center;
+		}
+		button {
+			@include btn;
+			@include font($font-bold, 14px);
+			color: $main-blue;
+			background-color: transparent;
+		}
+	}
+	thead {
+		td {
+			@include font($font-bold, 12px);
+			text-transform: uppercase;
+			padding-left: 5px;
+		}
+	}
+	tbody {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+		}
+	}
+	thead {
+		td {
+		color: $uaz-color;
+		background-color: $uaz-color-light;
+		border-top: 3px solid $uaz-color;				
+		}
+	}
+	tbody {			
+		tr {
+			&:hover {
+				color: $uaz-color;
+				background-color: $uaz-color-light;
+			}
+		}
+	}
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {}
+
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-2) {
+
+.parts-order-table {
+	display: table;
+	margin-bottom: 36px;
+	width: 100%;
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		&:nth-child(1) {
+			width: 15%;
+		}
+		&:nth-child(2) {
+			width: 50%;
+		}
+		&:nth-child(3) {
+			width: 7%;
+		}
+		&:nth-child(4) {
+			width: 8%;
+		}
+		&:nth-child(5) {
+			width: 10%;
+		}
+		&:nth-child(6) {
+			padding-left: 0;
+			text-align: center;
+		}
+		input[type=number] {
+			width: 60px;
+		}
+		button {
+			@include btn;
+			@include font($font-bold, 14px);
+			color: $main-blue;
+			background-color: transparent;
+		}
+	}
+	thead {
+		td {
+			@include font($font-bold, 12px);
+			text-transform: uppercase;
+			padding-left: 5px;
+		}
+	}
+	tbody,
+	tfoot {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+		}
+	}
+	tfoot {
+		td {						
+			&:nth-child(2),
+			&:nth-child(4) {
+				color: $main-red;
+				text-transform: uppercase;
+			}
+			&:nth-child(6) {
+				button {
+					color: $main-red;
+				}
+			}
+		}
+	}
+	thead {
+		td {
+		color: $uaz-color;
+		background-color: $uaz-color-light;
+		border-top: 3px solid $uaz-color;				
+		}
+	}
+	tbody {			
+		tr {
+			&:hover {
+				color: $uaz-color;
+				background-color: $uaz-color-light;
+			}
+		}
+	}
+}
+
+
+
+.link-view-all-block {
+	display: block;
+	margin-bottom: 12px;
+}
+
+}

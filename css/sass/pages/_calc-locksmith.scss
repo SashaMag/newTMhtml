@@ -1,0 +1,158 @@
+.calc-locksmith__select-car {
+	padding-left: 18px;
+	padding-right: 18px;
+	.select-block {
+		display: inline-block;
+		width: 100%;
+	}
+	span {
+		display: block;
+		margin-bottom: 12px;
+	}
+}
+
+.calc-locksmith__table-block {
+	margin-top: -0px;
+}
+
+.calc-locksmith-table {
+	width: 100%;
+	border: $grey-line;
+	thead {
+		tr {
+			@include font($font-bold, 14px);
+			height: 38px;
+			border-bottom: $grey-line;
+			text-transform: uppercase;
+			td {				
+				&:first-child {
+					padding-left: 18px;					
+				}
+			}
+		}
+	}
+	tbody {
+		tr {
+			height: 38px;
+			border-bottom: $grey-line;
+			padding-left: 18px;
+			td {
+				&:first-child {
+					padding-left: 18px;					
+				}
+				&:nth-child(3) {
+					padding-left: 3px;
+					padding-right: 3px;
+					border-right: $grey-line;
+					border-left: $grey-line;
+				}
+				&:last-child {
+					border-right: none;
+					display: none;
+				}
+			}
+		}
+	}
+	tfoot {
+		tr {
+			height: 78px;
+			td {
+				&:first-child {
+					padding-left: 18px;	
+					border-right: $grey-line;		
+				}			
+			}
+		}
+		.in-total {
+			text-align: center;
+		}
+	}
+	.label-for-checkbox {
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color: #efefef;
+		margin: 0 auto;
+	}
+
+	.calc-table-radio {
+		display: none;
+	}
+
+	.calc-table-radio:checked ~ label {
+		background-image: url(/img/icon/table-radio.png);
+	}
+
+	.sign-for-work {
+		margin: 0 auto;
+	}
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-1) {
+
+
+.calc-locksmith-table {
+	tbody {
+		tr {			
+			td {
+				&:last-child {
+					@include font($font-bold, 14px);
+					border-right: none;
+					display: table-cell;
+					text-align: center;
+					text-transform: uppercase;
+					color: $text-blue;
+				}
+			}
+		}
+	}
+}
+
+.calc-locksmith__select-car {
+	.select-block {
+		width: 45%;
+		max-width: 270px;
+		margin-right: 20px;
+		select {
+			width: 100%;
+		}
+	}
+}
+
+.calc-locksmith__table-block {
+	margin-top: -20px;
+}
+
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.calc-locksmith__select-car {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.calc-locksmith__table-block {
+	margin-top: -35px;
+}
+
+}

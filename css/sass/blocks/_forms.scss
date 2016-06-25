@@ -1,0 +1,808 @@
+form {
+  background-color: #fff;
+}
+
+.modal form {
+  border: $grey-line;
+}
+
+input[type="text"],
+select {
+  @include box-sizing;
+  @include font($font-medium, 14px);
+  width: 100%;
+  margin-bottom: 18px;
+  outline: none;
+  border: $grey-line;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
+
+select {
+  padding: 9px;
+}
+
+button[type="submit"] {
+  @include btn;
+  @include font($font-bold, 14px);
+  width: 100%;
+  padding: 20px;
+  background-color: #89090f;
+}
+
+.submit_button {
+
+  @include btn;
+  @include font($font-bold, 14px);
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #135c2f;
+
+  //@include btn;
+  //@include font($font-bold, 14px);
+  //
+  //background-color: #e2e2e2;
+  color: #135c2f;
+  //bottom: -89px;
+  //height: 40px;
+  //line-height: 40px;
+  //padding: 0;
+  //position: absolute;
+  //right: 0;
+  //width: 214px;
+  //
+  //border: 2px solid #135c2f;
+  //color: #135c2f;
+  //
+  //display: inline-block;
+  //
+  //text-decoration: none;
+  //text-transform: uppercase;
+  //
+  //font-size: 14px;
+
+}
+
+.form-block {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.radio-label {
+  text-transform: uppercase;
+  @include font($font-bold, 14px);
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  margin-bottom: 19px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    top: -2px;
+    left: 1px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 2px;
+    left: 5px;
+  }
+}
+
+.checkbox-label,
+.service-page__checkbox-label {
+  @include box-sizing;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: $grey-line;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.embedded-form {
+  .popup-form {
+    @include box-sizing;
+    width: 100%;
+    max-width: 100%;
+    h2,
+    .closing-cross,
+    .headline {
+      display: none;
+    }
+  }
+}
+
+.popup-form,
+.form-service-page,
+.form-buy-parts {
+  padding: 18px;
+
+  .closing-cross {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 11px;
+      top: 5px;
+      right: 0;
+      cursor: pointer;
+      background: url(/img/blocks/form/closing-cross.png);
+    }
+  }
+  .closing-cross-up {
+    float: right;
+  }
+  .closing-cross-down {
+    display: block;
+    margin-top: 15px;
+    padding-left: 20px;
+    cursor: pointer;
+    &:before {
+      top: 6px;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    display: inline-block;
+    width: 80%;
+  }
+
+  hr.headline {
+    margin-right: -18px;
+    margin-left: -18px;
+    margin-bottom: 18px;
+  }
+
+  .block-headline {
+    display: block;
+    margin-bottom: 20px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  textarea {
+    @include box-sizing;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .model-page__color-pick-block {
+    margin-left: 0;
+  }
+}
+
+.service-form {
+  #service-form__maintenance:checked ~ .service-form__maintenance,
+  #service-form__locksmith:checked ~ .service-form__locksmith,
+  #service-form__warranty:checked ~ .service-form__warranty,
+  #service-form__body-repair:checked ~ .service-form__body-repair {
+    &:before {
+      @include checked-checkbox;
+    }
+  }
+}
+
+.trade-in-form {
+  .mileage,
+  .year-of-issue {
+    width: 48%;
+    display: inline-block;
+  }
+  .mileage {
+    float: right;
+  }
+}
+
+.utilization-form {
+  .mileage,
+  .year-of-issue {
+    width: 48%;
+    display: inline-block;
+  }
+  .mileage {
+    float: right;
+  }
+}
+
+.buy-form {
+  input[type="radio"] {
+    display: none;
+  }
+  #buy-form__radio--1:checked ~ .radio-label-1,
+  #buy-form__radio--2:checked ~ .radio-label-2 {
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.form-feedback {
+  input[type="radio"] {
+    display: none;
+  }
+  #feedback-form__radio--1:checked ~ .radio-label-1,
+  #feedback-form__radio--2:checked ~ .radio-label-2 {
+    &:after {
+      display: block;
+    }
+  }
+  .service-phone {
+    margin-bottom: 18px;
+    display: block;
+    .full-phone {
+      color: $main-red;
+      display: block;
+      margin-bottom: 0;
+    }
+    a {
+      color: $main-red;
+      font-size: 20px;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+}
+
+.form-credit-calc {
+  .first-pay-select,
+  .first-pay-summ,
+  .time,
+  .monthly-pay {
+    width: 68%;
+    display: inline-block;
+  }
+  .first-pay-summ,
+  .monthly-pay {
+    //float: right;
+  }
+  .span-monthly-paid {
+    white-space: nowrap;
+  }
+}
+
+.form-service-page {
+  #service-page-form__maintenance:checked ~ .service-page-form__maintenance,
+  #service-page-form__locksmith:checked ~ .service-page-form__locksmith,
+  #service-page-form__warranty:checked ~ .service-page-form__warranty,
+  #service-page-form__body-repair:checked ~ .service-page-form__body-repair {
+    &:before {
+      @include checked-checkbox;
+    }
+  }
+}
+
+.form-buy-parts {
+  .buying-parts {
+    span {
+      @include font($font-medium, 16px);
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tire-form {
+  input[type="checkbox"] {
+    display: none;
+  }
+  .tire-block {
+    .checkbox-block {
+      display: inline-block;
+      width: 15%;
+      float: left;
+      #tires:checked ~ .tires,
+      #discs:checked ~ .discs {
+        &:before {
+          @include checked-checkbox;
+        }
+      }
+    }
+    .select-block {
+      display: inline-block;
+      select {
+        width: auto;
+        padding: 0;
+        margin-right: 30px;
+      }
+    }
+  }
+  .model-block {
+    margin-top: 18px;
+    .select-with-label {
+      width: 49%;
+      display: inline-block;
+      &:nth-child(2) {
+        float: right;
+      }
+      span {
+        display: block;
+        @include font($font-medium, 16px);
+        margin-bottom: 5px;
+      }
+      select {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form-tuning-request {
+  padding: 18px;
+
+  .closing-cross {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 11px;
+      top: 5px;
+      right: 0;
+      cursor: pointer;
+      background: url(/img/blocks/form/closing-cross.png);
+    }
+  }
+  .closing-cross-up {
+    float: right;
+  }
+  .closing-cross-down {
+    display: block;
+    margin-top: 15px;
+    padding-left: 20px;
+    cursor: pointer;
+    &:before {
+      top: 6px;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    display: inline-block;
+    width: 80%;
+  }
+
+  hr.headline {
+    margin-right: -18px;
+    margin-left: -18px;
+    margin-bottom: 18px;
+  }
+
+  .block-headline {
+    display: block;
+    margin-bottom: 20px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  textarea {
+    @include box-sizing;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .model-page__color-pick-block {
+    margin-left: 0;
+  }
+}
+
+.evac-form {
+  padding: 18px;
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {
+
+  input[type="text"],
+  select,
+  .checkbox-label,
+  button[type="submit"],
+  .service-page__checkbox-label {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .service-form {
+    .service-form__locksmith,
+    .service-form__body-repair {
+      float: right;
+    }
+    textarea {
+      width: 49%;
+      height: 102px;
+      float: right;
+    }
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .trade-in-form {
+    .mileage,
+    .year-of-issue {
+      width: 49%;
+      display: inline-block;
+    }
+    .wanna-buy {
+      select {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+    .wanna-sell {
+      input[type="text"] {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .credit-form {
+    .block-headline.choose-color,
+    .model-page__color-pick-block {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .block-headline.choose-color {
+      margin-right: 18px;
+    }
+    .wanna-buy {
+      select {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+      input[type="text"] {
+        float: right;
+      }
+    }
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .test-drive-form {
+    .choose-model {
+      select {
+        &:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+    textarea {
+      height: 102px;
+      width: 49%;
+      float: right;
+    }
+    .e-mail {
+      float: right;
+    }
+  }
+
+  .utilization-form {
+    .mileage,
+    .year-of-issue {
+      width: 49%;
+      display: inline-block;
+    }
+    .wanna-sell {
+      input {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+    .contact-info-block {
+      input {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .buy-form {
+    .radio-label {
+      @include box-sizing;
+      display: inline-block;
+      width: 49%;
+    }
+    .radio-label-2 {
+      float: right;
+      margin-top: 5px;
+    }
+    .wanna-buy {
+      select {
+        &:nth-child(2) {
+          float: right;
+        }
+      }
+      input {
+        float: right;
+      }
+    }
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .form-feedback {
+    .service-phone {
+      .full-phone {
+        display: inline;
+      }
+    }
+    textarea {
+      float: right;
+      width: 49%;
+      max-width: 49%;
+      height: 163px;
+    }
+    .contact-info-block {
+      input:last-child {
+        float: right;
+      }
+    }
+  }
+
+  .form-credit-calc {
+    .wanna-buy {
+      select {
+        &:nth-child(2) {
+          float: right;
+        }
+      }
+      input[type="text"] {
+        float: right;
+      }
+    }
+    .first-pay-block,
+    .timing-block {
+      display: inline-block;
+      width: 49%;
+    }
+    .time,
+    .monthly-pay {
+      display: inline-block;
+      width: 48%;
+    }
+    .timing-block {
+      float: right;
+    }
+    .time {
+      select {
+        width: 100%;
+      }
+    }
+    .monthly-pay {
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .form-service-page {
+    .contact-info-block {
+      input[type="text"] {
+        &:nth-child(2n) {
+          float: right;
+        }
+        &:nth-child(2n-1) {
+          float: left;
+        }
+      }
+    }
+  }
+
+  .service-page-form__select-block {
+    select {
+      &:nth-child(2n) {
+        float: right;
+      }
+      &:nth-child(2n-1) {
+        float: left;
+      }
+    }
+  }
+
+  .autocredit-form {
+    .choose-model,
+    .price,
+    .name,
+    .mail {
+      float: right;
+    }
+  }
+
+  .form-buy-parts {
+    .user-car {
+      float: left;
+      width: 49%;
+      select,
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+    .buying-parts {
+      float: right;
+      width: 49%;
+      span {
+        @include font($font-medium, 16px);
+        display: block;
+        margin-bottom: 15px;
+      }
+      textarea {
+        height: 193px;
+      }
+    }
+    .phone,
+    .name {
+      float: right;
+    }
+  }
+
+  .form-tuning-request {
+    .user-car {
+      float: left;
+      width: 49%;
+      select,
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+    .tuning {
+      float: right;
+      width: 49%;
+      span {
+        @include font($font-medium, 16px);
+        display: block;
+        margin-bottom: 15px;
+      }
+      textarea {
+        height: 135px;
+      }
+    }
+    .phone {
+      float: right;
+    }
+  }
+
+  .evac-form {
+    padding: 18px;
+    .phone {
+      float: right;
+    }
+  }
+
+  .form-recall {
+    .phone {
+      float: right;
+    }
+  }
+
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-2) {
+
+  .embedded-form {
+    .popup-form {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .popup-form,
+  .form-buy-parts {
+    max-width: 600px;
+    .closing-cross-down {
+      display: none;
+    }
+  }
+
+  .service-page__checkbox-label {
+    width: auto;
+    margin-right: 45px;
+  }
+
+  .form-service-page {
+    padding: 0;
+  }
+
+  .embedded-form.form-buy-parts {
+    padding: 0;
+  }
+
+  .form-tuning-request {
+    padding: 0;
+  }
+
+  .form-tuning-request.popup-form {
+    padding: 18px;
+  }
+
+  .embedded-form {
+    .form-tuning-request.popup-form {
+      padding: 0;
+    }
+  }
+
+  .form-recall.popup-form {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,105 @@
+.content-block-with-nav {
+	position: relative;
+	z-index: 1;
+	.main-column {
+		@include box-sizing;
+		display: block;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.nav-column {
+		position: relative;
+		z-index: 5;
+		display: block;
+		width: 100%;
+		margin-bottom: 25px;
+
+		@include box-sizing;
+		a {
+			@include btn;
+			width: 100%;
+			display: block;
+			height: 50px;
+			line-height: 50px;
+			background-color: $main-red;
+			margin-bottom: 5px;
+			border-radius: 2px;
+			&:hover,
+			&:active {
+				background-color: $main-red-hover;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {
+
+.content-block-with-nav {
+	margin-bottom: 20px;
+	.main-column {
+		margin-bottom: 12px;
+	}
+	.nav-column {
+		a {
+			margin-bottom: 12px;
+			width: 49%;
+			&:nth-of-type(2n) {
+				float: right;
+			}
+			&:nth-of-type(2n-1) {
+				float: left;
+			}
+		}
+	}
+}
+
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.content-block-with-nav {
+	width: $desktop-width;
+	&.clearfix {
+		display: inline-block;
+	}
+	.main-column {
+		display: inline-block;
+		width: 874px;
+	}
+	.nav-column {
+		float: right;
+		width: 266px;
+		a {
+			margin-bottom: 30px;
+			height: 40px;
+			line-height: 40px;
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+}

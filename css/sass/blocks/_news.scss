@@ -1,0 +1,116 @@
+.news-block {
+	.news-item {
+		margin-bottom: 30px;
+		time {
+			display: block;
+			@include font($font-bold, 14px);
+			margin-bottom: 8px;
+			margin-left: 18px;
+			color: #333;
+		}
+		img {
+			@include box-sizing;
+			width: 100%;
+			margin-bottom: 14px;
+			border: $grey-line;
+		}
+		h2 {			
+			margin-bottom: 8px;
+			margin-left: 18px;
+			a {
+				@include font($font-bold, 16px);
+				color: #333;
+				text-decoration: none;
+			}
+		}
+		.description {
+			display: block;
+			@include font($font-light, 16px);
+			color: #333;
+			margin-left: 18px;
+			margin-bottom: 4px;
+		}
+		.view-more {
+			text-decoration: none;
+			text-transform: uppercase;
+			@include font($font-bold, 12px);
+			color: #333;
+			margin-left: 18px;
+		}
+	}
+	.link-view-all {
+		margin-left: 18px;
+	}
+}
+
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-1) {
+
+.news-block {
+	.news-item {
+		display: inline-block;
+		vertical-align: top;
+		width: 48.5%;
+		&:nth-child(2n) {
+			float: right;
+		}
+		&:nth-child(2n-1) {
+			float: left;
+		}
+	}
+}
+
+}
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+@media (min-width: $breakpoint-2) {
+
+.news-block {
+	.news-item {
+		width: 23.8%;
+		margin-right: 1.25%;
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+		&:nth-child(2n) {
+			float: none;
+		}
+		&:nth-child(2n-1) {
+			float: none;
+		}
+		time {
+			margin-left: 0;
+		}
+		img {
+			max-height: 108px;
+			overflow: hidden;
+		}
+		h2 {
+			margin-left: 0;
+		}
+		.description {
+			margin-left: 0;
+		}
+		.view-more {
+			margin-left: 0;
+		}
+	}
+}
+
+}

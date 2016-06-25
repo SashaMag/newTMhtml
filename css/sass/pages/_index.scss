@@ -1,0 +1,177 @@
+.index__content-block {
+	@include box-sizing;
+	margin-bottom: 24px;
+	.banner-block {
+		margin-bottom: 20px;
+		.banner {
+			width: 100%;
+			box-sizing:border-box;
+			height: 100px;
+			border: 1px solid $main-blue;
+			background-color: #ccc;
+		}
+	}
+	p,
+	a,
+	span {
+		padding-left: 15px;
+	}
+	h3 {
+		margin-left: 15px;
+	}
+	p {
+		font-style: $font-light;
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.navigation-page-link {
+	a {
+		display: block;
+	}
+}
+
+.index__tuning-block {
+	.banner-block {
+		.banner-3,
+		.banner-4 {
+			display: none;
+		}
+	}
+}
+
+
+.index__news-block {
+	.news-item:nth-child(3),
+	.news-item:nth-child(4) {
+		display: none;
+	}
+}
+
+.index__address-block {
+	article {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: $breakpoint-1) {
+
+.index__content-block {
+	margin-bottom: 36px;
+	p,
+	a,
+	span {
+		padding-left: 18px;
+	}
+	h3 {
+		margin-left: 18px;
+	}
+	.banner-block {
+		.banner {
+			display: inline-block;
+			width: 49%;
+			&:nth-child(2n) {
+				float: right;
+			}
+			&:nth-child(2n-1) {
+				float: left;
+			}
+		}
+	}
+}
+
+.index__tuning-block {
+	.banner-block {
+		.banner-3,
+		.banner-4 {
+			display: none;
+		}
+	}
+}
+
+.index__news-block {
+	article {
+			display: inline-block;
+			width: 49%;		
+		&:nth-child(2n) {
+			float: right;
+		}
+		&:nth-child(2n-1) {
+			float: left;
+		}
+	}
+}
+
+}
+
+@media (min-width: $breakpoint-2) {
+
+.index__content-block {
+	p,
+	a,
+	span {
+		padding-left: 0;
+	}
+	h3 {
+		margin-left: 0;
+	}
+}
+
+.index__special-offer-block {
+	.banner-block {
+		.banner {
+			width: 576px;
+			margin-right: 18px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.index__tuning-block {
+	.banner-block {
+		.banner {
+			float: none !important;
+			// специфичность из-за nth-child
+			display: inline-block;
+			width: 279px;
+			margin-right: 14px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+.index__news-block {
+	.news-item {
+		float: none !important;
+		// специфичность из-за nth-child
+		width: 23.8%;
+		margin-right: 1.25%;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.news-item:nth-child(3),
+	.news-item:nth-child(4) {
+		display: inline-block;
+	}
+}
+
+.two-column-text {
+	-webkit-column-width: 560px;
+  -moz-column-width: 560px;
+  column-width: 560px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+}

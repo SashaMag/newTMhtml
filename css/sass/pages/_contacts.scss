@@ -1,0 +1,203 @@
+.contacts__address-block {
+	padding-left: 18px;
+	.title {
+		display: none;
+	}
+	.center-name {
+		@include font($font-bold, 16px);
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	.center-address {
+		display: block;
+		@include font($font-light, 16px);
+		margin-bottom: 13px;
+	}
+	.time-block {
+		margin-bottom: 30px;
+	}
+	.description {
+		@include font($font-bold, 16px, 20px);
+		display: inline-block;
+		text-transform: uppercase;
+		width: 45%;
+		vertical-align: middle;
+	}
+	.days {
+		width: 45%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.weekdays,
+	.weekend {
+		display: inline-block;
+		@include font($font-light, 16px, 20px);
+	}
+}
+
+.content-block-with-nav {
+	.contacts__nav-column {
+		padding-left: 18px;
+		padding-right: 18px;
+		a {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.contacts__two-column-phones-block {
+	margin-bottom: 24px;
+	padding-left: 18px;
+	h3,
+	.phones {
+		display: inline-block;
+		vertical-align: top;
+	}
+	h3 {
+		width: 40%;
+		float: left;
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.phones {
+		@include font($font-light, 16px, 20px);
+		width: 57%;
+		float: right;
+	}
+}
+
+.contacts-map-block--global {
+	display: none;
+}
+
+.phones-and-address-block--way {
+	@include font($font-light, 16px, 20px);
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-1) {
+
+.contacts__address-block {
+	.address,
+	.time-block {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+}
+
+.contacts__two-column-phones-block {
+	h3,
+	.phones
+	 {
+		float: none;
+	}
+	h3 {
+		width: 150px;
+	}
+	.phones {
+		width: auto;
+		max-width: 400px;
+	}
+}
+
+.contacts-map-block {
+	display: block;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 36px;
+}
+
+}
+
+
+// .########..########..########....###....##....##
+// .##.....##.##.....##.##.........##.##...##...##.
+// .##.....##.##.....##.##........##...##..##..##..
+// .########..########..######...##.....##.#####...
+// .##.....##.##...##...##.......#########.##..##..
+// .##.....##.##....##..##.......##.....##.##...##.
+// .########..##.....##.########.##.....##.##....##
+
+
+@media (min-width: $breakpoint-2) {
+
+.contacts-content-block-with-nav {
+	margin-top: -150px;
+	margin-bottom: 0;
+}
+
+.content-block-with-nav {
+	.contacts__nav-column {
+			padding-left: 0;
+			padding-right: 0;
+		a {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.contacts__address-block {
+	padding-left: 0;
+	.title {
+		display: inline-block;
+		@include font($font-bold, 16px);
+		text-transform: uppercase;
+	}
+	.address--1,
+	.address--2 {
+		float: right;
+		width: 730px;
+	}
+	.address {
+		width: 315px;
+	}
+	.time-block {
+		width: 360px;
+	}
+}
+
+.phone-and-address-title,
+hr.headline.phone-and-address-hr {
+	margin-left: 460px;
+}
+
+.phones-and-address-block {
+	width: 430px;
+	float: right;
+	.phones {
+		width: 250px;
+	}
+}
+
+.phones-and-address-block--way {
+	p {
+		margin-top: 0;
+		padding-left: 18px;
+	}
+}
+
+.contacts-map-block {
+	display: inline-block;
+	width: 440px;
+	height: 460px;
+	float: left;
+	&--global {
+	margin-top: -42px;		
+	}
+}
+
+
+}
