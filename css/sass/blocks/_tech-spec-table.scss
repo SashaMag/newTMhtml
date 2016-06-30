@@ -1,6 +1,41 @@
 .tech-cpec-table,
 .link-view-all-block {
-	display: none;
+	//display: none;
+
+	display: table;
+	margin-bottom: 12px;
+	width: 100%;
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		&:first-child {
+			@include font($font-bold, 12px);
+			text-transform: uppercase;
+			width: 25%;
+			padding-left: 5px;
+		}
+		&:not(:first-child) {
+			@include font($font-medium, 14px);
+		}
+	}
+
+	&--uaz {
+		td {
+			&:first-child {
+				color: $uaz-color;
+				background-color: $uaz-color-light;
+				border-left: 3px solid $uaz-color;
+			}
+			&:not(:first-child) {
+				&:hover {
+					color: $uaz-color;
+					background-color: $uaz-color-light;
+				}
+			}
+		}
+	}
 }
 
 // .########..########..########....###....##....##
@@ -26,39 +61,8 @@
 @media (min-width: $breakpoint-2) {
 
 .tech-cpec-table {
-	display: table;
-	margin-bottom: 12px;
-	width: 100%;
-	td {
-		height: 42px;
-		border: $grey-line;
-		text-align: left;
-		padding-left: 10px;
-		&:first-child {
-			@include font($font-bold, 12px);
-			text-transform: uppercase;
-			width: 25%;
-			padding-left: 5px;
-		}
-		&:not(:first-child) {
-			@include font($font-medium, 14px);
-		}	
-	}
-	&--uaz {
-		td {
-			&:first-child {
-				color: $uaz-color;
-				background-color: $uaz-color-light;
-				border-left: 3px solid $uaz-color;
-			}
-			&:not(:first-child) {
-				&:hover {
-					color: $uaz-color;
-					background-color: $uaz-color-light;
-				}
-			}	
-		}
-	}
+
+
 	&--sy {		
 		td {
 			width: 9%;

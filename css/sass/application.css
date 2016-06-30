@@ -2776,41 +2776,44 @@ button[type="submit"] {
           color: #fff; } }
 .tech-cpec-table,
 .link-view-all-block {
-  display: none; }
+  display: table;
+  margin-bottom: 12px;
+  width: 100%; }
+  .tech-cpec-table td,
+  .link-view-all-block td {
+    height: 42px;
+    border: 1px solid #adadad;
+    text-align: left;
+    padding-left: 10px; }
+    .tech-cpec-table td:first-child,
+    .link-view-all-block td:first-child {
+      font-family: "RobotoBold";
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: uppercase;
+      width: 25%;
+      padding-left: 5px; }
+    .tech-cpec-table td:not(:first-child),
+    .link-view-all-block td:not(:first-child) {
+      font-family: "RobotoMedium";
+      font-size: 14px;
+      line-height: 14px; }
+  .tech-cpec-table--uaz td:first-child,
+  .link-view-all-block--uaz td:first-child {
+    color: #135c2f;
+    background-color: #dff0d8;
+    border-left: 3px solid #135c2f; }
+  .tech-cpec-table--uaz td:not(:first-child):hover,
+  .link-view-all-block--uaz td:not(:first-child):hover {
+    color: #135c2f;
+    background-color: #dff0d8; }
 
 @media (min-width: 960px) {
-  .tech-cpec-table {
-    display: table;
-    margin-bottom: 12px;
-    width: 100%; }
-    .tech-cpec-table td {
-      height: 42px;
-      border: 1px solid #adadad;
-      text-align: left;
-      padding-left: 10px; }
-      .tech-cpec-table td:first-child {
-        font-family: "RobotoBold";
-        font-size: 12px;
-        line-height: 12px;
-        text-transform: uppercase;
-        width: 25%;
-        padding-left: 5px; }
-      .tech-cpec-table td:not(:first-child) {
-        font-family: "RobotoMedium";
-        font-size: 14px;
-        line-height: 14px; }
-    .tech-cpec-table--uaz td:first-child {
-      color: #135c2f;
-      background-color: #dff0d8;
-      border-left: 3px solid #135c2f; }
-    .tech-cpec-table--uaz td:not(:first-child):hover {
-      color: #135c2f;
-      background-color: #dff0d8; }
-    .tech-cpec-table--sy td {
-      width: 9%; }
-      .tech-cpec-table--sy td.headline {
-        background-color: #adadad;
-        color: #fff; }
+  .tech-cpec-table--sy td {
+    width: 9%; }
+    .tech-cpec-table--sy td.headline {
+      background-color: #adadad;
+      color: #fff; }
 
   .link-view-all-block {
     display: block;
