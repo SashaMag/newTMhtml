@@ -734,7 +734,7 @@ th {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 10000000;
+  z-index: 200;
   /* if modal content doesn't fit inside the overlay, display scrollbars */
   overflow: auto;
   /* allow one-finger iPad scrolling */

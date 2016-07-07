@@ -63,7 +63,7 @@
 			<div class="content-block-with-nav service-page clearfix">
 				<section class="main-column">
 
-					<img src="/files/images/banner_uaz.jpg" alt="Диагностика Уаз за 500р.">
+<!--					<img src="/files/images/banner_uaz.jpg" alt="Диагностика Уаз за 500р.">-->
 
 					<h2>Обслуживаемые марки</h2>
 					<hr class="headline">
