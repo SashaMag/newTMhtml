@@ -24,6 +24,7 @@
 <script type="text/javascript" src="/js/jquery.als-1.7.min.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
 <script type="text/javascript" src="/js/additional-script.js"></script>
+<script src="/js/jquery.colorbox-min.js"></script>
 
 <!--noindex-->
 

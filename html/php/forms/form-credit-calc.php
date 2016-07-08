@@ -56,6 +56,7 @@
 				<option value="48">48</option>
 				<option value="54">54</option>
 				<option value="60">60</option>
+				<option value="84">84</option>
 			</select>
 
 		</div>		
@@ -75,6 +76,6 @@
 		<input type="text" name="" id="" placeholder="E-mail" field-name="Почта">
 	</div>
 	<span class="error-message-block"></span>
-	<button type="submit" class="generalSubmitMail" formnovalidate name=cancel value="Cancel">Отправить заявку</button>
+	<button type="submit" class="generalSubmitMail">Отправить заявку</button>
 	<span class="closing-cross closing-cross-down">Закрыть</span>
 </form>

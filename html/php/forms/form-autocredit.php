@@ -38,5 +38,5 @@
 
 	</div>
 	<span class="error-message-block"></span>
-	<button type="submit" class="generalSubmitMail" formnovalidate name=cancel value="Cancel">Отправить заявку</button>
+	<button type="submit" class="generalSubmitMail">Отправить заявку</button>
 </form>
