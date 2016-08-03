@@ -1,86 +1,85 @@
 .in-stock-table {
-  display: table;
-  margin-bottom: 12px;
-  width: 100%;
-  .mobile {
-    &.color {
-      span {
-        @include box-sizing;
-        display: block;
-        width: 25px;
-        height: 25px;
-        border: $grey-line;
-      }
-    }
-  }
-
-  .desktop {
-    display: none;
-  }
-  td {
-    height: 42px;
-    border: $grey-line;
-    text-align: left;
-    padding-left: 10px;
-    width: 20%;
-  }
-  thead {
-    td {
-      @include font($font-bold, 12px);
-      text-transform: uppercase;
-      padding-left: 5px;
-    }
-  }
-  tbody {
-    td {
-      @include font($font-medium, 14px);
-      &:first-child {
-        @include font($font-bold, 12px);
-        text-transform: uppercase;
-      }
-      a {
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-    }
-  }
-  &--uaz {
-    thead {
-      td {
-        color: $uaz-color;
-        background-color: $uaz-color-light;
-        border-top: 3px solid $uaz-color;
-      }
-    }
-    tbody {
-      tr {
-        &:hover {
-          color: $uaz-color;
-          background-color: $uaz-color-light;
-        }
-      }
-    }
-  }
-  &--sy {
-    thead {
-      td {
-        color: $sy-color;
-        border-top: 3px solid $sy-color;
-      }
-    }
-  }
+	display: table;
+	margin-bottom: 12px;
+	width: 100%;
+	.mobile {
+		&.color {
+			span {
+				@include box-sizing;
+				display: block;
+				width: 25px;
+				height: 25px;
+				border: $grey-line;
+			}
+		}
+	}
+	.desktop {
+		display: none;
+	}
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		width: 20%;
+	}
+	thead {
+		td {
+			@include font($font-bold, 12px);
+			text-transform: uppercase;
+			padding-left: 5px;
+		}
+	}
+	tbody {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+			a {
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+	&--uaz {
+		thead {
+			td {
+			color: $uaz-color;
+			background-color: $uaz-color-light;
+			border-top: 3px solid $uaz-color;				
+			}
+		}
+		tbody {			
+			tr {
+				&:hover {
+					color: $uaz-color;
+					background-color: $uaz-color-light;
+				}
+			}
+		}
+	}
+	&--sy {
+		thead {
+			td {
+				color: $sy-color;
+				border-top: 3px solid $sy-color;			
+			}
+		}
+	}
 }
 
 .model-page__in-stock--collapsed {
-  .in-stock-table {
-    tbody {
-      tr {
-        &:not(:nth-child(1):nth-child(2):nth-child(3)) {
-          display: none;
-        }
-      }
-    }
-  }
+	.in-stock-table {
+		tbody {
+			tr {
+				&:not(:nth-child(1):nth-child(2):nth-child(3)) {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 // .########..########..########....###....##....##
@@ -91,8 +90,9 @@
 // .##.....##.##....##..##.......##.....##.##...##.
 // .########..##.....##.########.##.....##.##....##
 
-@media (min-width: $breakpoint-1) {
-}
+@media (min-width: $breakpoint-1) {}
+
+
 
 // .########..########..########....###....##....##
 // .##.....##.##.....##.##.........##.##...##...##.
@@ -104,117 +104,68 @@
 
 @media (min-width: $breakpoint-2) {
 
-  .in-stock-table {
-    display: table;
-    margin-bottom: 12px;
-    width: 100%;
-    .mobile {
-      display: none;
-    }
-    tr.desktop {
-      display: table-row;
-    }
-    td.desktop {
-      display: table-cell;
-    }
-    td {
-      height: 42px;
-      border: $grey-line;
-      text-align: left;
-      padding-left: 10px;
-      width: 20%;
-    }
-    thead {
-      td {
-        @include font($font-bold, 12px);
-        text-transform: uppercase;
-        padding-left: 5px;
-      }
-    }
-    tbody {
-      td {
-        @include font($font-medium, 14px);
-        &:first-child {
-          @include font($font-bold, 12px);
-          text-transform: uppercase;
-        }
-        a {
-          text-transform: uppercase;
-          text-decoration: none;
-        }
-      }
-    }
-    &--uaz {
-      thead {
-        td {
-          color: $uaz-color;
-          background-color: $uaz-color-light;
-          border-top: 3px solid $uaz-color;
-        }
-      }
-      tbody {
-        tr {
-          &:hover {
-            color: $uaz-color;
-            background-color: $uaz-color-light;
-          }
-        }
-      }
-    }
-  }
-
-  .link-view-all-block {
-    display: block;
-    margin-bottom: 12px;
-  }
-
+.in-stock-table {
+	display: table;
+	margin-bottom: 12px;
+	width: 100%;
+	.mobile {
+		display: none;
+	}
+	tr.desktop {
+		display: table-row;
+	}
+	td.desktop {
+		display: table-cell;
+	}
+	td {
+		height: 42px;
+		border: $grey-line;
+		text-align: left;
+		padding-left: 10px;
+		width: 20%;
+	}
+	thead {
+		td {
+			@include font($font-bold, 12px);
+			text-transform: uppercase;
+			padding-left: 5px;
+		}
+	}
+	tbody {
+		td {			
+			@include font($font-medium, 14px);
+			&:first-child {
+				@include font($font-bold, 12px);
+				text-transform: uppercase;
+			}
+			a {
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+	&--uaz {
+		thead {
+			td {
+			color: $uaz-color;
+			background-color: $uaz-color-light;
+			border-top: 3px solid $uaz-color;				
+			}
+		}
+		tbody {			
+			tr {
+				&:hover {
+					color: $uaz-color;
+					background-color: $uaz-color-light;
+				}
+			}
+		}
+	}
 }
 
-// Button for flter complectations
-.complSelect {
-
-  background-color: #527691;
-  color: #FFFFFF;
-  border-radius: 3px;
-  padding: 0 7px 1px 7px;
-  cursor: pointer;
-  margin: 0 0 10px 5px;
-
-  display: inline-block;
+.link-view-all-block {
+	display: block;
+	margin-bottom: 12px;
 }
 
-.complSelectYear {
-
-  background-color: #527691;
-  color: #FFFFFF;
-  border-radius: 3px;
-  padding: 0 7px 1px 7px;
-  cursor: pointer;
-  margin: 0 0 10px 5px;
-
-  display: inline-block;
-}
-
-.complSelectDiesel {
-
-  background-color: #527691;
-  color: #FFFFFF;
-  border-radius: 3px;
-  padding: 0 7px 1px 7px;
-  cursor: pointer;
-  margin: 0 0 10px 5px;
-
-  display: inline-block;
-}
-
-.complSelectColor {
-
-  background-color: #527691;
-  color: #FFFFFF;
-  border-radius: 3px;
-  padding: 0 7px 1px 7px;
-  cursor: pointer;
-  margin: 0 0 10px 5px;
-
-  display: inline-block;
 }

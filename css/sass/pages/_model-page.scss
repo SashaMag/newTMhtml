@@ -21,7 +21,6 @@
 
 .model-page__headline {
 	margin-bottom: 25px;
-	color: #4c78a9;
 }
 
 .model-page__photo-block {
@@ -29,7 +28,6 @@
 		display: none;
 		width: 100%;
 		margin-bottom: 7px;
-		border-radius: 10px;
 		&.active {
 			display: block;
 		}
@@ -82,16 +80,11 @@
 	input[type="radio"] {
 		display: none;
 	}
-	//.wanna-buy:first-letter {
-	//	text-transform: uppercase;
-	//}
 	.wanna-buy {
 		display: block;
-		margin-bottom: 30px;
-
+		margin-bottom: 30px;	
 		@include font($font-bold, 18px);
 	}
-
 	.price,
 	.credit-pay {
 		display: block;
@@ -290,7 +283,6 @@
 	width: 450px;
 	.wanna-buy {
 		width: 300px;
-
 	}
 	.buy-method {
 		display: none;

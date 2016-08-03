@@ -13,7 +13,6 @@
 		display: block;
 		width: 100%;
 		margin-bottom: 25px;
-
 		@include box-sizing;
 		a {
 			@include btn;
@@ -23,7 +22,6 @@
 			line-height: 50px;
 			background-color: $main-red;
 			margin-bottom: 5px;
-			border-radius: 2px;
 			&:hover,
 			&:active {
 				background-color: $main-red-hover;

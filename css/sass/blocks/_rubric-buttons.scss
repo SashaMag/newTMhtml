@@ -51,7 +51,32 @@
 		&__tuning-page--1:after,
 		&__tuning-page--2:after,
 		&__tuning-page--3:after,
-		&__tuning-page--4:after, {
+		&__tuning-page--4:after,
+		&__autocredit--1:after,
+		&__autocredit--2:after,
+		&__autocredit--3:after,
+		&__autocredit--4:after,
+		&__body-repair--1:after,
+		&__body-repair--2:after,
+		&__body-repair--3:after,
+		&__body-repair--4:after,
+		&__body-repair--5:after,
+		&__body-repair--6:after,
+		&__body-repair--7:after,
+		&__corporate--1:after,
+		&__corporate--2:after,
+		&__corporate--3:after,
+		&__additional-services--1:after,
+		&__additional-services--2:after,
+		&__additional-services--3:after,
+		&__additional-services--4:after,
+		&__additional-services--5:after,
+		&__additional-services--6:after,
+		&__additional-services--7:after,
+		&__additional-services--8:after,
+		&__additional-services--9:after,
+		&__additional-services--10:after,
+		&__additional-services--11:after {
 			background-repeat: no-repeat;		
 			background-size: contain;	
 		}
@@ -209,6 +234,181 @@
 			height: 40px;
 			width: 50px;
 		}
+		&__autocredit--1:after {
+			top: 18px;
+			background-image: url(/img/icon/percentage.png);
+			background-position: 0 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__autocredit--2:after {
+			top: 14px;
+			background-image: url(/img/icon/calc.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__autocredit--3:after {
+			top: 14px;
+			background-image: url(/img/icon/zero-percent.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 60px;
+		}
+		&__autocredit--4:after {
+			top: 14px;
+			background-image: url(/img/icon/agreement.png);
+			background-position: 5px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__body-repair--1:after {
+			top: 14px;
+			background-image: url(/img/icon/calc.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;		
+		}
+		&__body-repair--2:after {
+			top: 14px;
+			background-image: url(/img/icon/repair.png);
+			background-position: 0 0;
+			height: 45px;
+			width: 45px;
+		}
+		&__body-repair--3:after {
+			top: 14px;
+			background-image: url(/img/icon/body-repair.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 80px;
+		}
+		&__body-repair--4:after {
+			top: 14px;
+			background-image: url(/img/icon/comission.png);
+			background-position: 0 0;
+			height: 55px;
+			width: 55px;
+		}
+		&__body-repair--5:after {
+			top: 14px;
+			background-image: url(/img/icon/agreement.png);
+			background-position: 5px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__body-repair--6:after {
+			top: 10px;
+			background-image: url(/img/icon/bodyguard.png);
+			background-position: 5px 0;
+			height: 50px;
+			width: 43px;			
+		}
+		&__body-repair--7:after {
+			top: 14px;
+			background-image: url(/img/icon/service.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__corporate--1:after {
+			top: 18px;
+			background-image: url(/img/icon/percentage.png);
+			background-position: 0 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__corporate--2:after {
+			top: 14px;
+			background-image: url(/img/icon/agreement.png);
+			background-position: 5px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__corporate--3:after {
+			top: 14px;
+			background-image: url(/img/icon/comission.png);
+			background-position: 0 0;
+			height: 55px;
+			width: 55px;
+		}
+		&__additional-services--1:after {
+			top: 14px;
+			background-image: url(/img/icon/agreement.png);
+			background-position: 5px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__additional-services--2:after {
+			top: 14px;
+			background-image: url(/img/icon/service.png);
+			background-position: 10px 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__additional-services--3:after {
+			top: 10px;
+			background-image: url(/img/icon/bodyguard.png);
+			background-position: 5px 0;
+			height: 50px;
+			width: 43px;
+		}
+		&__additional-services--4:after {
+			top: 14px;
+			background-image: url(/img/icon/body-repair.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 80px;
+		}
+		&__additional-services--5:after {
+			top: 22px;
+			background-image: url(/img/icon/trade-in.png);
+			background-position: 0 0;
+			height: 30px;
+			width: 59px;
+		}
+		&__additional-services--6:after {
+			top: 5px;
+			background-image: url(/img/icon/utilization.png);
+			background-position: 12px 0;
+			height: 55px;
+			width: 55px;
+		}
+		&__additional-services--7:after {
+			top: 14px;
+			background-image: url(/img/icon/comission.png);
+			background-position: 0 0;
+			height: 55px;
+			width: 55px;
+		}
+		&__additional-services--8:after {
+			top: 18px;
+			background-image: url(/img/icon/percentage.png);
+			background-position: 0 0;
+			height: 40px;
+			width: 50px;
+		}
+		&__additional-services--9:after {
+			top: 14px;
+			background-image: url(/img/icon/price.png);
+			background-position: 0 0;
+			height: 42px;
+			width: 50px;
+		}
+		&__additional-services--10:after {
+			top: 14px;
+			background-image: url(/img/icon/contacts-news.png);
+			background-position: 10px 0;
+			height: 35px;
+			width: 52px;
+		}
+		&__additional-services--11:after {
+			top: 14px;
+			background-image: url(/img/icon/contacts-news.png);
+			background-position: 10px 0;
+			height: 35px;
+			width: 52px;
+		}
 		&:nth-child(2n) {
 			float: right;
 		}
@@ -258,7 +458,32 @@
 		&__tuning-page--1:after,
 		&__tuning-page--2:after,
 		&__tuning-page--3:after,
-		&__tuning-page--4:after, {
+		&__tuning-page--4:after,
+		&__autocredit--1:after,
+		&__autocredit--2:after,
+		&__autocredit--3:after,
+		&__autocredit--4:after,
+		&__body-repair--1:after,
+		&__body-repair--2:after,
+		&__body-repair--3:after,
+		&__body-repair--4:after,
+		&__body-repair--5:after,
+		&__body-repair--6:after,
+		&__body-repair--7:after,
+		&__corporate--1:after,
+		&__corporate--2:after,
+		&__corporate--3:after,
+		&__additional-services--1:after,
+		&__additional-services--2:after,
+		&__additional-services--3:after,
+		&__additional-services--4:after,
+		&__additional-services--5:after,
+		&__additional-services--6:after,
+		&__additional-services--7:after,
+		&__additional-services--8:after,
+		&__additional-services--9:after,
+		&__additional-services--10:after,
+		&__additional-services--11:after  {
 			top: 45px;			
 			background-position: 0 0;
 		}
@@ -357,6 +582,111 @@
 			height: 61px;
 			width: 57px;
 		}
+		&__autocredit--1:after {
+			height: 52px;
+			width: 87px;
+		}
+		&__autocredit--2:after {
+			height: 51px;
+			width: 51px;
+		}
+		&__autocredit--3:after {
+			height: 51px;
+			width: 63px;
+		}
+		&__autocredit--4:after {
+			height: 50px;
+			width: 69px;
+		}
+		&__body-repair--1:after {
+			height: 50px;
+			width: 69px;			
+		}
+		&__body-repair--2:after {
+			height: 59px;
+			width: 59px;
+		}
+		&__body-repair--3:after {
+			height: 47px;
+			width: 106px;
+		}
+		&__body-repair--4:after {
+			height: 50px;
+			width: 68px;
+		}
+		&__body-repair--5:after {
+			height: 50px;
+			width: 69px;			
+		}
+		&__body-repair--6:after {
+			height: 62px;
+			width: 43px;			
+		}
+		&__body-repair--7:after {
+			height: 58px;
+			width: 79px;
+			background-position: 20px 0;
+		}
+		&__corporate--1:after {
+			height: 52px;
+			width: 87px;
+		}
+		&__corporate--2:after {
+			height: 50px;
+			width: 69px;
+		}
+		&__corporate--3:after {
+			height: 50px;
+			width: 68px;
+		}
+		&__additional-services--1:after {
+			height: 50px;
+			width: 69px;
+		}
+		&__additional-services--2:after {
+			height: 58px;
+			width: 79px;
+			background-position: 20px 0;
+		}
+		&__additional-services--3:after {
+			height: 62px;
+			width: 43px;
+		}
+		&__additional-services--4:after {
+			height: 47px;
+			width: 106px;
+		}
+		&__additional-services--5:after {
+			height: 50px;
+			width: 100px;
+		}
+		&__additional-services--6:after {
+			background-position: 12px 0;
+			height: 67px;
+			width: 67px;
+		}
+		&__additional-services--7:after {
+			height: 50px;
+			width: 68px;
+		}
+		&__additional-services--8:after {
+			height: 52px;
+			width: 87px;
+		}
+		&__additional-services--9:after {
+			height: 61px;
+			width: 70px;
+		}
+		&__additional-services--10:after {
+			background-position: 0 0;
+			height: 46px;
+			width: 52px;
+		}
+		&__additional-services--11:after {
+			background-position: 0 0;
+			height: 46px;
+			width: 52px;
+		}
 	}
 }
 
@@ -401,13 +731,45 @@
 		&__tuning-page--1:after,
 		&__tuning-page--2:after,
 		&__tuning-page--3:after,
-		&__tuning-page--4:after {
+		&__tuning-page--4:after,
+		&__autocredit--1:after,
+		&__autocredit--2:after,
+		&__autocredit--3:after,
+		&__autocredit--4:after,
+		&__body-repair--1:after,
+		&__body-repair--2:after,
+		&__body-repair--3:after,
+		&__body-repair--4:after,
+		&__body-repair--5:after,
+		&__body-repair--6:after,
+		&__body-repair--7:after,
+		&__corporate--1:after,
+		&__corporate--2:after,
+		&__corporate--3:after,
+		&__additional-services--1:after,
+		&__additional-services--2:after,
+		&__additional-services--3:after,
+		&__additional-services--5:after,
+		&__additional-services--7:after,
+		&__additional-services--8:after,
+		&__additional-services--9:after,
+		&__additional-services--10:after,
+		&__additional-services--11:after  {
 			top: 28px;			
 		}
 		&__service-page--4:after {
 			top: 40px;
-		}		
+		}
 		&__used-cars--3:after {
+			top: 20px;
+		}
+		&__body-repair--3:after {
+			top: 40px;
+		}
+		&__additional-services--4:after {
+			top: 40px;
+		}
+		&__additional-services--6:after {
 			top: 20px;
 		}
 		&:nth-child(2n) {

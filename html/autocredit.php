@@ -35,10 +35,15 @@
 			<div class="content-block-with-nav clearfix">
 				<section class="main-column">
 					<div class="rubric-button-block clearfix">
-						<a onclick="scrollToAnchor('credit');" class="rubric-button rubric-button__contacts--1">Заявка на кредит</a>
+<!-- 						<a onclick="scrollToAnchor('credit');" class="rubric-button rubric-button__contacts--1">Заявка на кредит</a>
 						<a href="/html/autocredit/credit-calc.php" class="rubric-button rubric-button__contacts--2">Кредитный калькулятор</a>
 						<a href="" class="rubric-button rubric-button__contacts--3">Рассрочка</a>
-						<a href="" class="rubric-button rubric-button__contacts--4">Лизинг для юр. лиц</a>
+						<a href="" class="rubric-button rubric-button__contacts--4">Лизинг для юр. лиц</a> -->
+
+						<a onclick="scrollToAnchor('credit');" class="rubric-button rubric-button__autocredit--1">Заявка на кредит</a>
+						<a href="/html/autocredit/credit-calc.php" class="rubric-button rubric-button__autocredit--2">Кредитный калькулятор</a>
+						<a href="" class="rubric-button rubric-button__autocredit--3">Рассрочка</a>
+						<a href="" class="rubric-button rubric-button__autocredit--4">Лизинг для юр. лиц</a>
 					</div>
 				</section>
 				<div class="nav-column autocredit-nav-column clearfix">	
